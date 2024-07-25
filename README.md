@@ -3,10 +3,11 @@
 ## Summary
 This repository contains the documentation and resources for the EDM Test Rig, a test stand developed for advancing Electrical Discharge Machining (EDM) technology. The rig is designed to facilitate the development and testing of EDM components and systems. 
 
-**Systems of EDM Test Rig**
-| System                        | Description                                       | 
-|-------------------------------|---------------------------------------------------| 
-| DIN Rail Box                  | Mounts PSUs and control systems on DIN rails      | 
+**Subassemblies of EDM Test Rig**
+| Subassembly                   | Description                                       | 
+|-------------------------------|---------------------------------------------------|
+| Frame                         | Physical 4040 extrusion frame                     |
+| DIN Rail Box                  | Mounts PSUs and control systems on DIN rails      |
 | Kinematics                    | Provides movement of EDM test items               | 
 
 ## EDM Test Rig Specifications
@@ -25,6 +26,22 @@ Specifications of EDM Test rig.
 | DIN Rail Space    | 40", 35 mm wide, 7.5 mm tall                  | 
 | On-Board Power    | 48 VDC, 24 VDC, 12 VDC, 5 VDC                 |
 
+## Frame 
+The frame provides a rigid, industrial grade, structure for conducting testing. 
+
+### Frame Bill of Materials 
+
+Hardware for frame. 
+NOTE: 4040 Extrusions must be cut to length
+| Item                                          | Description                           | Quantity | Link | 
+|-----------------------------------------------|---------------------------------------|-----------|------|
+| 4040 Extrusions, Length  500 mm               | 4040 Aluminum T-Slot Extrusion        | 4         | [Amazon](https://a.co/d/1AEJy0P) |
+| 4040 Extrusions, Length  500 mm, Countersunks | Extrusion w/ M5 Countersinks          | 2         | [Amazon](https://a.co/d/1AEJy0P) |
+| 4040 Extrusions, Length  1000 mm              | 4040 Aluminum T-Slot Extrusion        | 6         | [Amazon](https://a.co/d/1AEJy0P) |
+| 4040 Extrusions, Length  1220 mm              | 4040 Aluminum T-Slot Extrusion        | 4         | [Amazon](https://a.co/d/1AEJy0P) |
+| 4040 L Plate Bracket                          | M8x16 Brackets for 4040 Exturions     | 1 Pack of 8   | [Amazon](https://a.co/d/fb5n5l8) | 
+| 4040 L Bracket                                | Corner Bracket for 4040 Extruions     | 1 Pack of 12  | [Amazon](https://a.co/d/0dLhwZp) | 
+| 4040 Adjustable Feet                          | Adjustable feed for 4040 Extruions    | 1 Pack of 4   | [Amazon](https://a.co/d/1duonmF) |
 
 ## DIN Rail Box
 The DIN rail box provides 40 inches of 35 mm x 7.5 mm DIN rail space for mounting power supply units (PSUs), control systems, and other equipment. This setup ensures organized and efficient management of components within the EDM Test Rig.
@@ -120,10 +137,24 @@ This section details the ballscrew-driven kinematics for the EDM test rig, which
 ### Kinematics Bill of Materials
 
 Hardware for kinematics of EDM test rig: Ballscrew actuators. 
-| Item                                          | Description                               | Quantity | Link |
-|-----------------------------------------------|-------------------------------------------|----------|------| 
-| FUYU FSL40 Ballscrew Module, 500mm Stroke     | C7 Class ballscrew, 30 micron resolution  | 2        | [Amazon](https://a.co/d/11PDmWa)
-| FUYU FSL40 Ballscrew Module, 1000 mm Stroke   | C7 Class ballscrew, 30 micron resolution  | 1        | [Amazon](https://a.co/d/bAsFjcN)
+| Item                                          | Description                               | Quantity  | Link |
+|-----------------------------------------------|-------------------------------------------|-----------|------| 
+| FUYU FSL40 Ballscrew Module, 500mm Stroke     | C7 Class ballscrew, 30 micron resolution  | 2         | [Amazon](https://a.co/d/11PDmWa)                          |
+| FUYU FSL40 Ballscrew Module, 1000 mm Stroke   | C7 Class ballscrew, 30 micron resolution  | 1         | [Amazon](https://a.co/d/bAsFjcN)                          |
+| LBE-04NU2 PNP NC Endstop                      | 10 mm x 6 mm, NPN, NC                     | 2         | Aliexpress                                                |
+| M5x0.8 mm, 35 mm Long, DIN 912                | For fastening Y-axis ballscrews to 4040   | 8         | [McMaster-Carr](https://www.mcmaster.com/91292A193/)      |
+| M5x0.8 mm, 16 mm Long, DIN 7991               | For fastening endstop module              | 4         | [Mcmaster-Carr](https://www.mcmaster.com/92125a212/)      |
+| M3x0.5 mm. 25 mm Long, DIN 7991               | For fastening X-axis brackets             | 8         | [Mcmaster-Carr](https://www.mcmaster.com/92125A138/)      |
+| M3x0.5 mm. 16 mm Long, ISO 7380               | For fastening Y-axis to brackets          | 8         | [McMaster-Carr](https://www.mcmaster.com/92095A184/)      |
+| M3x0.5 mm, 12 mm Long, DIN 7991               | For fastening endstops to endstop print   | 2         | [McMaster-Carr](https://www.mcmaster.com/92125A132/)      |
+| M3x0.5 mm Nut, DIN 934                        | For fastening endstops to endstop print   | 2         | [McMaster-Carr](https://www.mcmaster.com/90591A250/)      |
+
+| 3D Prints                                     | Description                           | Material      |
+|-----------------------------------------------|---------------------------------------|---------------|
+| Left X-Axis Bracket                           | Connects X-axis to Y-axis             | PLA or ASA    | 
+| Right X-Axis Bracket                          | Connects X-axis to Y-axis             | PLA or ASA    | 
+| 4040 Endstop Module                           | Retains magnetic endstop              | PLA or ASA    | 
+
 
 ### Assembly
 Instructions for assembling the kinematic components, including images, will be provided in this section.
