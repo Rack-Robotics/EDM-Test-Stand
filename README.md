@@ -1,4 +1,4 @@
-# EDM Test Rig
+# EDM Test Test
 
 ## Summary
 This repository contains the documentation and resources for the EDM Test Rig, a test stand developed for advancing Electrical Discharge Machining (EDM) technology. The rig is designed to facilitate the development and testing of EDM components and systems. 
